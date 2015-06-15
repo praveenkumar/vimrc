@@ -16,6 +16,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle 'altercation/solarized'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'tfnico/vim-gradle'
+Bundle 'ShowTrailingWhitespace'
 
 set bs=indent,eol,start	" allow backspacing over everything in insert mode
 set ai			" always set autoindenting on
@@ -39,6 +42,37 @@ set wildignore=*.o,*~,*.pyc
 syntax on
 set hlsearch
 highlight Normal ctermfg=grey ctermbg=black
+
+" Define Leaderkey and remap key
+let mapleader = ","
+
+"Bind nohl
+"Removes highlight of your last search
+noremap <C-n> :nohl<CR>
+vnoremap <C-n> :nohl<CR>
+inoremap <C-n> :nohl<CR>
+
+"Quick Saving
+noremap <C-Z> :update<CR>
+vnoremap <C-Z> <C-C> :update<CR>
+inoremap <C-Z> <C-O> :update<CR>
+
+"bind Ctrl movement around windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+"Easier to move between tabs
+map <Leader>n <esc>:tabprevious<CR>
+map <Leader>n <esc>:tabnext<CR>
+
+" map sort function to key
+vnoremap <Leader>s :sort<CR>
+
+"Easier move block of code
+vnoremap < <gv " better indentation
+vnoremap > >gv " better indentation
 
 nnoremap <F7> :GundoToggle<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
