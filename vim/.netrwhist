@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/prkumar/Work/logviewer/templates'
-let g:netrw_dirhist_2='/home/prkumar/.config'
-let g:netrw_dirhist_3='/home/prkumar/Work/projectConfig'

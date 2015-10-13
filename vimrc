@@ -5,20 +5,24 @@ endif
 set nocompatible	" Use Vim defaults (much better!)
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
 
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/powerline'
-Bundle 'sjl/gundo.vim'
-Bundle 'altercation/solarized'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'tfnico/vim-gradle'
-Bundle 'ShowTrailingWhitespace'
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'Lokaltog/powerline'
+Plugin 'sjl/gundo.vim'
+Plugin 'altercation/solarized'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'tfnico/vim-gradle'
+Plugin 'ShowTrailingWhitespace'
+Plugin 'elzr/vim-json'
+
+call vundle#end()
 
 set bs=indent,eol,start	" allow backspacing over everything in insert mode
 set ai			" always set autoindenting on
